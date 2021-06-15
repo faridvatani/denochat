@@ -10,7 +10,8 @@ listenAndServe({ port: 3000 }, async (req) => {
         bufReader: req.r,
         bufWriter: req.w,
         headers: req.headers,
-      }).then(chat);
+      })
+      .then(chat);
     }
 });
 
