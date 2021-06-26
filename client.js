@@ -4,9 +4,6 @@ window.addEventListener("DOMContentLoaded", () => {
     ws = new WebSocket(`ws://localhost:3000/ws`);
     ws.addEventListener("open", onConnectionOpen);
     ws.addEventListener("message", onMessageReceived);
-
-    const queryParams = getQueryParams();
-    console.log(queryParams);
 });
 
 function getQueryParams(){
@@ -24,6 +21,14 @@ function getQueryParams(){
 
 function onConnectionOpen(){
     console.log(`Connection Opened`);
+    const queryParams = getQueryParams();
+    // console.log(queryParams);
+    const event ={
+        event: 'Join',
+        groupName: queryParams.group,
+        groupName: queryParams.name
+    }
+    ws.send(event);
 }
 
 function onMessageReceived(event){
