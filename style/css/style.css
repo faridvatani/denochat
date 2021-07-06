@@ -44,36 +44,6 @@ input:checked {
     width: 115px;
 }
 
-
-/* input[type='radio'] {
-    width: 20px;
-    height: 20px;
-    border: 1px solid darkgray;
-    border-radius: 50%;
-    outline: none;
-}
-
-input[type='radio']:hover {
-    box-shadow: 0 0 5px 0px transparent inset;
-}
-
-input[type='radio']:before {
-    content: '';
-    display: block;
-    width: 60%;
-    height: 60%;
-    margin: 20% auto;
-    border-radius: 50%;
-}
-
-input[type='radio']:checked:before {
-    background: #3B4256;
-}
-
-input[type=radio]:checked~.check {
-    border: 5px solid #0DFF92;
-} */
-
 input[type='radio'] {
     -webkit-appearance: none;
     width: 20px;
