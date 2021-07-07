@@ -1,26 +1,242 @@
 @import url(../fonts/vazir.css);
-html, body {
-    height: 100%;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
 }
 
-html {
-    display: table;
-    margin: auto;
+* {
+    font-family: 'Vazir';
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
 
 body {
-    display: table-cell;
-    vertical-align: middle;
+    line-height: 1;
 }
 
-body,
-button,
-input,
-optgroup,
-select,
-textarea {
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+header,
+main,
+footer {
+    font-size: 1rem;
+}
+
+body {
     direction: rtl;
-    font-family: 'Vazir';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f7f7f7;
+    justify-content: center;
+}
+
+.section {
+    padding: 1rem 1.5rem;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0px 2rem 0px;
+}
+
+.logo-img .icon {
+    max-width: 10rem;
+    max-height: 10rem;
+}
+
+.logo-title .title {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+
+.card {
+    width: 450px;
+    top: calc(50% - 408px/2 + 79px);
+    background: #FFFFFF;
+    border: 2px solid #ECECEC;
+    box-sizing: border-box;
+    border-radius: 16px;
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0px 0 1px rgb(10 10 10 / 2%);
+}
+
+.field+.field {
+    padding: 22px 0px 5px 0px;
+}
+
+.welcome-text {
+    font-size: 1rem;
+    line-height: 2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #98989E;
+}
+
+.login-text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.2rem;
+    line-height: 1.4;
+    color: #212429;
+}
+
+.Specifications {
+    position: relative;
+    flex-grow: 1;
+    text-align: center;
+    z-index: 2;
+}
+
+.Specifications .far {
+    position: absolute;
+    top: 7px;
+    right: 13px;
+    font-style: normal;
+}
+
+input:focus {
+    outline-color: rgb(114, 114, 114);
+}
+
+.Specifications-input {
+    border: 1px solid #ccc;
+    line-height: 30px;
+    padding-right: 30px;
+    width: calc(100% - 30px);
+    z-index: 1;
+}
+
+.subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 2;
+    color: #212429;
 }
 
 .m-auto {
@@ -45,18 +261,84 @@ textarea {
     margin-bottom: 5px !important;
 }
 
-input:checked {
-    background: black;
+.enter-language {
+    display: flex;
+    justify-content: space-between;
 }
 
-.font-weight-700 {
-    font-weight: 700;
+.container {
+    display: block;
+    position: relative;
+    padding-right: 29px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #3B4256;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.image.is-115x115 {
-    height: 115px;
-    width: 115px;
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
 }
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 18px;
+    width: 18px;
+    border: 2px solid #3B4256;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.container:hover input~.checkmark {
+    background-color: rgb(224, 224, 224);
+}
+
+.container input:checked~.checkmark {
+    background-color: #3B4256;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.login-btn {
+    flex-grow: 1;
+    background-color: #3183FF;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 24px;
+    border: none;
+    padding: 9px;
+}
+
+.login-btn:hover {
+    background: #035add;
+    color: white;
+}
+
+.is-flex {
+    display: flex;
 
 input[type='radio'] {
     -webkit-appearance: none;
@@ -67,24 +349,68 @@ input[type='radio'] {
     outline: none;
 }
 
-input[type='radio']:hover {
-    box-shadow: 0 0 5px 0px rgb(134, 134, 134) inset;
+.is-flex-dircetion-column {
+    flex-direction: column;
 }
 
-input[type='radio']:before {
-    content: '';
-    display: block;
-    width: 60%;
-    height: 60%;
-    margin: auto;
-    border-radius: 50%;
-    margin-top: 3px;
+.copyright {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #222222;
+    opacity: 0.3;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 2;
+    direction: ltr;
 }
 
-input[type='radio']:checked:before {
-    background: #3B4256;
+.m-top-7 {
+    margin-top: 7rem;
 }
 
+@media screen and (max-width: 469px) {
+    .card {
+        width: 370px;
+    }
+    .welcome-text {
+        justify-content: center;
+    }
+    .login-text {
+        text-align: center;
+    }
+    .container {
+        font-size: .9rem;
+        padding-top: 5px;
+    }
+    .copyright {
+        font-size: 15px;
+        line-height: 1;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .card {
+        width: 340px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .card {
+        width: 300px;
+    }
+    .copyright {
+        font-size: 12px;
+        line-height: 1;
+    }
+    .checkmark {
+        height: 15px;
+        width: 15px;
+    }
+    .container {
+        padding-right: 23px;
+        font-size: .8rem;
+    }
+  }
+  
 input:checked {
     background: none;
 }
@@ -94,6 +420,7 @@ input:checked {
     border-radius: 16px;
     box-shadow:none;
 }
+  
 .box{
     box-shadow:none;
     background: none; 
