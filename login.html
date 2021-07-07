@@ -6,71 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Deno.svg/1200px-Deno.svg.png" />
     <title>Dino Chat</title>
     <link rel="stylesheet" href="./style/css/style.css" />
 </head>
 
 <body>
-    <div class="section">
-        <div class="container">
-            <div class="is-flex is-flex-direction-column is-align-items-center">
-                <div class="column is-5">
-                    <div class="columns is-12 is-multiline is-position-relative is-justify-content-center is-mobile">
-                        <div class="column is-11 block">
-                            <div class="has-width-full">
-                                <figure class="image is-128x128 m-auto">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Deno.svg/1200px-Deno.svg.png">
-                                </figure>
-                                <h2 class="title is-5 has-text-centered	has-text-black font-weight-700">دینو چت</h2>
-                            </div>
-                        </div>
-                        <div class="column is-12">
-                            <div class="card">
-                                <div class="box">
-                                    <h5 class="subtitle is-5 has-text-grey">خوش آمدید!</h5>
-                                    <h3 class="title is-3 has-text-black font-weight-700">ورود به دینو چت </h3>
 
-                                    <div class="field">
-                                        <p class="subtitle is-7 m-bottom-5">نام و نام خانوادگی</p>
-                                        <div class="control has-icons-left has-icons-right">
-
-                                            <input id="name" class="input radius-24" type="text" placeholder="نام و نام خانوادگی خود را وارد کنید" value="" name="name&family">
-                                            <span class="icon is-small is-right">
-                                                <i class="far fa-user"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-
-                                    <div class="field mt-5">
-                                        <div class="control is-flex is-justify-content-space-between is-flex-wrap-wrap">
-
-                                            <label class="radio is-flex">
-                                               <input type="radio" name="question" class="ml-1" checked>
-                                                 جاوا اسکریپت
-                                            </label>
-
-                                            <label class="radio is-flex">
-                                                <input type="radio" name="question" class="ml-1">
-                                                فلاتر
-                                            </label>
-
-                                            <label class="radio is-flex">
-                                                <input class="ml-1" type="radio" name="question">
-                                                پی اچ پی
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <button id="login" onclick="login()" class="button btn-color radius-24 mt-5 is-medium is-fullwidth">ورود</button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <header>
+        <div class="section">
+            <div class="logo">
+                <div class="logo-img">
+                    <img class="icon" src="./img/Deno.png">
+                </div>
+                <div class="logo-title">
+                    <h2 class="title">دینو چت</h2>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
+    <main>
+        <div class="card">
+            <div class="section">
+                <div class="field">
+                    <h5 class="welcome-text">خوش آمدید!</h5>
+                    <h3 class="login-text">ورود به دینو چت </h3>
+
+                </div>
+
+                <div class="field is-flex is-flex-dircetion-column">
+                    <p class="subtitle">نام و نام خانوادگی</p>
+                    <div class="Specifications">
+                        <i class="far fa-user"></i>
+                        <input id="Specifications-input" class="Specifications-input input radius-24" type="text" placeholder="نام و نام خانوادگی خود را وارد کنید" value="" name="name&family">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="enter-language">
+                        <label class="container">
+                            <input type="radio" checked="checked" name="radio">جاوا اسکریپت
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">
+                            <input type="radio" name="radio">فلاتر
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">پی اچ پی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="field is-flex">
+                    <button id="login" onclick="login()" class="login-btn">ورود</button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="section m-top-7">
+            <div class="is-flex">
+                <p class="copyright">©2021 DenoChat. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
     <script src="./plugins/main.js"></script>
 </body>
 
