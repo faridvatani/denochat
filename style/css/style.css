@@ -339,6 +339,14 @@ input:focus {
 
 .is-flex {
     display: flex;
+
+input[type='radio'] {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #3B4256;
+    border-radius: 50%;
+    outline: none;
 }
 
 .is-flex-dircetion-column {
@@ -401,4 +409,19 @@ input:focus {
         padding-right: 23px;
         font-size: .8rem;
     }
+  }
+  
+input:checked {
+    background: none;
+}
+
+.card{
+    border: 2px solid #ECECEC;
+    border-radius: 16px;
+    box-shadow:none;
+}
+  
+.box{
+    box-shadow:none;
+    background: none; 
 }
