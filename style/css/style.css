@@ -90,9 +90,6 @@ video {
     font-family: 'Vazir';
 }
 
-
-/* HTML5 display-role reset for older browsers */
-
 article,
 aside,
 details,
@@ -194,7 +191,6 @@ body {
 .welcome-text {
     font-size: 1rem;
     line-height: 2;
-    /* identical to box height, or 83% */
     display: flex;
     align-items: center;
     text-align: center;
