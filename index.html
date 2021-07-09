@@ -6,16 +6,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <title>DenoChat-ChatRoom</title>
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <section class="section">
+            <div class="contain">
+                <div class="header-chat">
+                    <div class="is-flex">
+                        <div class="image-header">
+                            <img src="./img/Deno.png" alt="denochat">
+                        </div>
+                        <div class="header-content is-flex">
+                            <div class="chatroom-type">
+                                <h1>چت روم :
+                                    <span>جاوا اسکریپت</span>
+                                </h1>
+                            </div>
+                            <div class="online-user-header">
+                                <h3>کاربران آنلاین :
+                                    <span>3 </span>
+                                    <span>نفر</span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="contain">
+                <div class="is-flex">
+                    <aside class="right-aside">
+                        <div class="user-side is-flex is-flex-dircetion-column">
+                            <div class="mt-1 is-flex is-flex-dircetion-column flex-grow-1">
+                                <div class="user-contact is-flex has-align-item-center">
+                                    <div class="user-profile-img">
+                                        <img src="./img/profile/1.jpg" alt="profile">
+                                    </div>
+                                    <div class="username">
+                                        <p>فرید وطنی</p>
+                                    </div>
+                                </div>
+                                <div class="user-contact is-flex has-align-item-center">
+                                    <div class="user-profile-img">
+                                        <img src="./img/profile/2.jpg" alt="profile">
+                                    </div>
+                                    <div class="username">
+                                        <p>علی نوری</p>
+                                    </div>
+                                </div>
+                                <div class="user-contact is-flex has-align-item-center">
+                                    <div class="user-profile-img">
+                                        <img src="./img/profile/3.jpg" alt="profile">
+                                    </div>
+                                    <div class="username">
+                                        <p>سارا بیوتی</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="logout">
+                                <button class="logout-btn">خروج</button>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <aside class="left-aside">
+                        <div class="chat-side is-flex is-flex-dircetion-column">
+                            <div class="mt-1 is-flex is-flex-dircetion-column flex-grow-1">
+                                <div class="is-flex is-flex-dircetion-column">
+                                    <div class="user-message-section is-flex">
+                                        <div class="pic-profile">
+                                            <img class="pic-profile-img" src="./img/profile/3.jpg" alt="picture profile">
+                                        </div>
+                                        <div class="user-message">
+                                            <p>سلام بچه ها چطورید؟</p>
+                                        </div>
+                                    </div>
+                                    <div class="friend-message-section is-flex is-flex-dircetion-row-reverse">
+                                        <div class="pic-profile">
+                                            <img class="pic-profile-img" src="./img/profile/2.jpg" alt="picture profile">
+                                        </div>
+                                        <div class="friend-message">
+                                            <p>سلام خوبیم! </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="chat-box-holder">
+                                <div class="chat-input-holder flex-grow-1">
+                                    <input type="submit" value="ارسال" class="message-send" />
+                                    <textarea name="chat-box" id="chat-box" class="chat-input" cols="30" rows="10" placeholder="پیام خود را در این قسمت بنویسد ...."></textarea>
+                                    <span><i class="far fa-laugh-beam"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </header>
     <main>
-        <h1>hello world</h1>
+
     </main>
 
-    <footer>
+    <footer class="is-flex">
         <div class="section m-top-7">
             <div class="is-flex">
                 <p class="copyright">©2021 DenoChat. All Rights Reserved.</p>
