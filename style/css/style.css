@@ -482,6 +482,16 @@ input:focus {
     margin: 1rem;
 }
 
+.user-contact {
+    cursor: pointer;
+}
+
+.user-contact:hover {
+    background-color: #d4d4d4;
+    padding: 8px;
+    border-radius: 14px;
+}
+
 .user-contact+.user-contact {
     /* border-top: 1px solid#ccc; */
     padding-top: .8rem;
@@ -502,7 +512,11 @@ input:focus {
 }
 
 .username {
-    margin-right: 1rem;
+    margin-right: .7rem;
+}
+
+.username p {
+    font-weight: 500;
 }
 
 .logout-btn {
@@ -553,7 +567,7 @@ input:focus {
 .chat-input {
     resize: none;
     padding: 0 10px;
-    height: 40px;
+    height: 25px;
     font-family: Vazir;
     font-size: 14px;
     color: #999999;
@@ -561,7 +575,6 @@ input:focus {
     flex: 1;
     border: none;
     border-radius: 16px 0 0 16px;
-    border-bottom: 1px solid rgba(0, 0, 0, .05);
 }
 
 .chat-input:focus,
@@ -598,6 +611,10 @@ input:focus {
     color: #999;
 }
 
+.fa-laugh-beam:hover {
+    color: rgb(109, 108, 108);
+}
+
 .pic-profile-img {
     width: 2rem;
     height: 2rem;
@@ -617,6 +634,7 @@ input:focus {
     font-size: 14px;
     line-height: 1px;
     padding: 1rem;
+    font-weight: 500;
 }
 
 .is-flex-dircetion-row-reverse {
@@ -642,9 +660,6 @@ input:focus {
     padding: .5rem;
 }
 
-
-/* Add a color to the cancel button */
-
 .cancelbtn {
     background-color: #ccc;
     color: black;
@@ -657,9 +672,6 @@ input:focus {
     color: white;
 }
 
-
-/* Add a color to the delete button */
-
 .log-out-btn {
     background: #3183FF;
     border-radius: 16px;
@@ -669,9 +681,6 @@ input:focus {
 .log-out-btn:hover {
     background: #035add;
 }
-
-
-/* Add padding and center-align text to the container */
 
 .container-modal {
     display: flex;
@@ -685,52 +694,32 @@ input:focus {
     line-height: 2;
 }
 
-
-/* The Modal (background) */
-
 .modal {
     display: none;
-    /* Hidden by default */
     position: fixed;
-    /* Stay in place */
     z-index: 1;
-    /* Sit on top */
     left: 0;
     top: 0;
     width: 100%;
-    /* Full width */
     height: 100%;
-    /* Full height */
     overflow: auto;
-    /* Enable scroll if needed */
     background-color: #474e5d;
     padding-top: 50px;
 }
 
-
-/* Modal Content/Box */
-
 .modal-content {
     background-color: #fefefe;
     margin: 5% auto 15% auto;
-    /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     width: 41%;
     display: flex;
     justify-content: center;
-    /* Could be more or less, depending on screen size */
 }
-
-
-/* Style the horizontal ruler */
 
 hr {
     border: 1px solid #f1f1f1;
     margin-bottom: 25px;
 }
-
-
-/* The Modal Close Button (x) */
 
 .close {
     position: absolute;
@@ -746,9 +735,6 @@ hr {
     color: #035add;
     cursor: pointer;
 }
-
-
-/* Change styles for cancel button and delete button on extra small screens */
 
 @media screen and (max-width: 300px) {
     .cancelbtn,
