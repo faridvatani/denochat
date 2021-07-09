@@ -69,7 +69,7 @@
                             </div>
 
                             <div class="logout">
-                                <button class="logout-btn">خروج</button>
+                                <button onclick="document.getElementById('id01').style.display='block'" class="logout-btn">خروج</button>
                             </div>
                         </div>
                     </aside>
@@ -121,6 +121,21 @@
             </div>
         </div>
     </footer>
+
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+        <form class="modal-content" action="/action_page.php">
+            <div class="container-modal">
+                <h1>خروج از اکانت </h1>
+                <p>آیا شما مایل به خروج از حساب کاربری خود هستید ؟</p>
+
+                <div class="is-flex">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">بی خیال</button>
+                    <button type="button" onclick="logout()" class="log-out-btn">خروج</button>
+                </div>
+            </div>
+        </form>
+    </div>
     <script src="./plugins/main.js"></script>
 </body>
 

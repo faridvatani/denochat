@@ -216,7 +216,7 @@ footer.is-flex {
     z-index: 2;
 }
 
-.Specifications .btn {
+.Specifications .far {
     position: absolute;
     top: 7px;
     right: 13px;
@@ -628,4 +628,131 @@ input:focus {
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.24), 0px 2px 4px rgba(0, 0, 0, 0.16), 0px -1px 1px rgba(0, 0, 0, 0.08);
     border-radius: 0px 24px 24px 24px;
     margin-left: .4rem;
+}
+
+
+/* modal */
+
+.cancelbtn,
+.log-out-btn {
+    width: calc(50% - 15px);
+    margin: 7px;
+    border: none;
+    color: white;
+    padding: .5rem;
+}
+
+
+/* Add a color to the cancel button */
+
+.cancelbtn {
+    background-color: #ccc;
+    color: black;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.cancelbtn:hover {
+    background-color: rgb(172, 172, 172);
+    color: white;
+}
+
+
+/* Add a color to the delete button */
+
+.log-out-btn {
+    background: #3183FF;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.log-out-btn:hover {
+    background: #035add;
+}
+
+
+/* Add padding and center-align text to the container */
+
+.container-modal {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    text-align: center;
+}
+
+.container-modal h1,
+.container-modal p {
+    line-height: 2;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 41%;
+    display: flex;
+    justify-content: center;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* Style the horizontal ruler */
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+
+/* The Modal Close Button (x) */
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #035add;
+    cursor: pointer;
+}
+
+
+/* Change styles for cancel button and delete button on extra small screens */
+
+@media screen and (max-width: 300px) {
+    .cancelbtn,
+    .log-out-btn {
+        width: 100%;
+    }
 }
