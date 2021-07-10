@@ -39,12 +39,12 @@
         </section>
     </header>
     <main>
-        <section class="section">
+        <section class="section padding-top">
             <div class="contain">
                 <div class="is-flex">
                     <aside class="right-aside">
                         <div class="user-side is-flex is-flex-dircetion-column">
-                            <div class="mt-1 is-flex is-flex-dircetion-column flex-grow-1">
+                            <div class="mt-1 is-flex is-flex-dircetion-column flex-grow-1 overflow-auto">
                                 <div class="user-contact is-flex has-align-item-center">
                                     <div class="user-profile-img">
                                         <img src="./img/profile/1.jpg" alt="profile">
@@ -78,23 +78,24 @@
                     </aside>
                     <aside class="left-aside">
                         <div class="chat-side is-flex is-flex-dircetion-column">
-                            <div class="mt-1 is-flex is-flex-dircetion-column flex-grow-1">
+                            <div class="mt-1 is-flex is-flex-dircetion-column flex-grow-1 overflow-auto">
                                 <div class="is-flex is-flex-dircetion-column">
-                                    <div class="user-message-section is-flex">
-                                        <div class="pic-profile">
-                                            <img class="pic-profile-img" src="./img/profile/3.jpg" alt="picture profile">
-                                        </div>
-                                        <div class="user-message">
-                                            <p>سلام بچه ها چطورید؟</p>
-                                        </div>
-                                    </div>
-
                                     <div class="friend-message-section is-flex is-flex-dircetion-row-reverse">
                                         <div class="pic-profile">
                                             <img class="pic-profile-img" src="./img/profile/2.jpg" alt="picture profile">
                                         </div>
                                         <div class="friend-message">
-                                            <p>سلام خوبیم! </p>
+                                            <p>سلام بچه ها چطورید؟! </p>
+                                        </div>
+                                    </div>
+                                    <div class="user-message-section is-flex">
+                                        <div class="pic-profile">
+                                            <img class="pic-profile-img" src="./img/profile/3.jpg" alt="picture profile">
+                                        </div>
+                                        <div class="message-section is-flex is-flex-dircetion-column">
+                                            <div class="user-message">
+                                                <p>سلام خوبیم</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -102,8 +103,7 @@
                             <div class="chat-box-holder">
                                 <div class="chat-input-holder flex-grow-1">
                                     <input type="submit" value="ارسال" class="message-send" />
-                                    <textarea name="chat-box" id="chat-box" class="chat-input" cols="30" rows="10" data-emojiable="true" data-emoji-input="unicode" placeholder="پیام خود را در این قسمت بنویسد ...."></textarea>
-
+                                    <textarea type="textbox" name="chat-box" id="chat-box" class="chat-input" cols="30" rows="10" data-emojiable="true" data-emoji-input="unicode" placeholder="پیام خود را در این قسمت بنویسد ...."></textarea>
                                 </div>
                             </div>
                         </div>

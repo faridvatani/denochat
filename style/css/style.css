@@ -154,6 +154,10 @@ footer.is-flex {
     align-items: center;
 }
 
+.padding-top {
+    padding-top: 0!important;
+}
+
 .section {
     padding: 1rem 1.5rem;
 }
@@ -566,7 +570,7 @@ input:focus {
 
 .chat-input {
     resize: none;
-    padding: 0 10px;
+    padding: 0px 4px 0px 28px;
     height: 25px;
     font-family: Vazir;
     font-size: 14px;
@@ -629,6 +633,10 @@ input:focus {
     max-width: 30rem;
 }
 
+.user-message+.user-message {
+    margin: .5rem;
+}
+
 .user-message p,
 .friend-message p {
     color: white;
@@ -638,7 +646,9 @@ input:focus {
     font-weight: 500;
 }
 
-.user-message-section+.friend-message-section {
+.user-message-section+.friend-message-section,
+.friend-message-section+.user-message-section,
+.user-message-section+.user-message-section {
     padding: 1rem;
 }
 
@@ -761,4 +771,17 @@ hr {
     right: unset;
     left: 2px;
     bottom: 48px;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.emoji-picker-icon.parent-has-scroll {
+    left: 28px;
+    right: unset;
+}
+
+.emoji-wysiwyg-editor.parent-has-scroll {
+    padding-right: 11px;
 }

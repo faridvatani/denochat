@@ -44,3 +44,22 @@ $(function() {
     // It can be called as many times as necessary; previously converted input fields will not be converted again
     window.emojiPicker.discover();
 });
+var inputText = document.querySelector("#chat-box");
+var btnSend = document.querySelector(".message-send");
+var messageArea = document.querySelector(".user-message-section");
+var Message_section = document.querySelector(".message-section");
+btnSend.addEventListener("click", (e) => {
+    var mess = inputText.value;
+    var section = document.createElement('div');
+    section.className += "user-message-section";
+    var user_message = document.createElement('div');
+    user_message.className += "user-message";
+    var paragraph = document.createElement('p');
+    paragraph.textContent = mess;
+    user_message.appendChild(paragraph);
+    Message_section.appendChild(user_message);
+    messageArea.append(Message_section)
+    inputText.value = "";
+    $(".chat-input").empty();
+    $(".emoji-wysiwyg-editor div").remove();
+});
