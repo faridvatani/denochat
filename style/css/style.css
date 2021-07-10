@@ -743,47 +743,6 @@ hr {
     }
 }
 
-
-/* dropup */
-
-.dropbtn {
-    background-color: transparent;
-    font-size: 16px;
-    border: none;
-}
-
-.dropup {
-    position: relative;
-    display: inline-block;
-}
-
-.dropup-content {
-    display: none;
-    position: absolute;
-    min-width: 170px;
-    max-width: 200px;
-    background-color: #e2e2e2;
-    bottom: 29px;
-    z-index: 1;
-    right: -43px;
-}
-
-.dropup-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropup-content a:hover {
-    background-color: rgb(153, 152, 152)
-}
-
-.dropup:hover .dropup-content {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .emoji-picker-icon {
     left: 14px;
     top: 22px;
