@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/css/style.css">
+    <link rel="stylesheet" href="https://onesignal.github.io/emoji-picker/lib/css/emoji.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/css/style.css">
     <title>DenoChat-ChatRoom</title>
 </head>
 
@@ -102,8 +103,24 @@
                             <div class="chat-box-holder">
                                 <div class="chat-input-holder flex-grow-1">
                                     <input type="submit" value="ارسال" class="message-send" />
-                                    <textarea name="chat-box" id="chat-box" class="chat-input" cols="30" rows="10" placeholder="پیام خود را در این قسمت بنویسد ...."></textarea>
-                                    <span><i class="far fa-laugh-beam"></i></span>
+                                    <textarea name="chat-box" id="chat-box" class="chat-input" cols="30" rows="10" data-emojiable="true" data-emoji-input="unicode" placeholder="پیام خود را در این قسمت بنویسد ...."></textarea>
+                                    <!-- <div class="dropup">
+                                        <button class="dropbtn is-flex"><i class="far fa-laugh-beam"></i></button>
+                                        <div class="dropup-content">
+                                            <a href="#">&#x1F600;</a>
+                                            <a href="#">&#x1F634;</a>
+                                            <a href="#">&#x1F602;</a>
+                                            <a href="#">&#x1F608;</a>
+                                            <a href="#">&#x1F609;</a>
+                                            <a href="#">&#x1F60C;</a>
+                                            <a href="#">&#x1F60E;</a>
+                                            <a href="#">&#x1F613;</a>
+                                            <a href="#">&#x1F61C;</a>
+                                            <a href="#">&#x1F628;</a>
+                                            <a href="#">&#x1F62E;</a>
+                                            <a href="#">&#x1F62F;</a>
+                                        </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -136,6 +153,11 @@
             </div>
         </form>
     </div>
+    <script src="plugins/jquery.min.js"></script>
+    <script src="plugins/jquery.emojiarea.js"></script>
+    <script src="plugins/emoji-picker.js"></script>
+    <script src="plugins/emoji-picker-util.js"></script>
+    <script src="plugins/emoji-picker-config.js"></script>
     <script src="./plugins/main.js"></script>
 </body>
 
