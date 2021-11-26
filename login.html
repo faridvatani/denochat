@@ -12,7 +12,7 @@
 </head>
 
 <body class="is-flex">
-
+    
     <header>
         <div class="section">
             <div class="logo">
@@ -26,46 +26,47 @@
         </div>
     </header>
     <main>
-        <div class="card">
-            <div class="section">
-                <div class="field">
-                    <h5 class="welcome-text">خوش آمدید!</h5>
-                    <h3 class="login-text">ورود به دینو چت </h3>
-                </div>
-
-                <div class="field is-flex is-flex-dircetion-column">
-                    <p class="subtitle">نام و نام خانوادگی</p>
-                    <div class="Specifications">
-                        <i class="far fa-user"></i>
-                        <input id="Specifications-input" class="Specifications-input input radius-24" type="text" placeholder="نام و نام خانوادگی خود را وارد کنید" value="" name="name&family">
+        <form action="index.html" class="login-form">
+            <div class="card">
+                <div class="section">
+                    <div class="field">
+                        <h5 class="welcome-text">خوش آمدید!</h5>
+                        <h3 class="login-text">ورود به دینو چت </h3>
                     </div>
-                </div>
 
-                <div class="field">
-                    <div class="enter-language">
-                        <label class="container">
-                            <input type="radio" checked="checked" name="radio">جاوا اسکریپت
-                            <span class="checkmark"></span>
-                        </label>
-
-                        <label class="container">
-                            <input type="radio" name="radio">فلاتر
-                            <span class="checkmark"></span>
-                        </label>
-
-                        <label class="container">پی اچ پی
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
+                    <div class="field is-flex is-flex-dircetion-column">
+                        <p class="subtitle">نام و نام خانوادگی</p>
+                        <div class="Specifications">
+                            <i class="far fa-user"></i>
+                            <input type="text" class="Specifications-input input radius-24" id="Specifications-input" name="name" placeholder="نام و نام خانوادگی خود را وارد کنید">
+                        </div>
                     </div>
-                </div>
-                <div class="field is-flex">
-                    <button id="login" onclick="login()" class="login-btn">ورود</button>
+
+                    <div class="field">
+                        <div class="enter-language">
+                            <label class="container">
+                                <input type="radio" id="js" name="group" value="Javascript" checked="checked">جاوا اسکریپت
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="container">
+                                <input type="radio" id="flutter" name="group" value="Flutter">فلاتر
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="container">پی اچ پی
+                                <input type="radio" id="php" name="group" value="PHP">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="field is-flex">
+                        <button id="joinChatBtn" class="login-btn">ورود</button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </form>
     </main>
-
     <footer>
         <div class="section m-top-7">
             <div class="is-flex">
@@ -73,8 +74,5 @@
             </div>
         </div>
     </footer>
-
-    <script src="./plugins/main.js"></script>
 </body>
-
 </html>
